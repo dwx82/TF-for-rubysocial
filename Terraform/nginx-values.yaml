@@ -1,0 +1,13 @@
+---
+controller:
+  config:
+    compute-full-forwarded-for: "true"
+    use-forwarded-headers: "true"
+    proxy-body-size: "0"
+  ingressClassResource:
+    enabled: true
+    default: true
+  metrics:
+    enabled: true
+    serviceMonitor:
+      enabled: true
